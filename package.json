@@ -1,0 +1,31 @@
+{
+  "name": "movie-watchlist",
+  "version": "1.0.0",
+  "description": "A movie watchlist app which has two pages(index.html and watchlist.html) in the index.html there is a search field where a user can search for a movie There is a button in the index.html which enables a user to add/ remove movie from their Watchlist There is a button in the Watchlist.html which enables a user to remove movie from their Watchlist",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fatima-hub333/movie-watchlist.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fatima-hub333/movie-watchlist/issues"
+  },
+  "homepage": "https://github.com/Fatima-hub333/movie-watchlist#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.26.0",
+    "hint": "^7.1.2",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
+  }
+}
