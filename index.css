@@ -1,0 +1,447 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  font-size: 0.85rem;
+  font-family: 'inter', sans-serif;
+  font-weight: 500;
+}
+
+h1, h2, h3{
+  font-weight: 800;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  background-color: rgba(18, 18, 18, 1);
+}
+
+header {
+  width: 100%;
+  height: 50vh;
+  background-image: url("images/bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgba(18, 18, 18, 0.9);
+  background-blend-mode: overlay;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  align-items: center;
+  color: rgba(255, 255, 255, 1);
+  font-size: 1rem;
+}
+
+header h1{
+  font-size: 2rem;
+}
+
+header a{
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.secondary-btn,
+.new-page {
+  border-radius: 50%;
+}
+
+.secondary-btn:hover{
+  border: 1px solid gold;
+  background: #2c2c2c;
+  cursor: pointer;
+  outline: none;
+}
+
+.primary-btn:focus,
+.secondary-btn:focus {
+  outline: none;
+}
+
+.primary-btn:hover {
+  background: #fff;
+  color: #787878;
+}
+
+.film-cont-2{
+  border-bottom: 2px solid #2C2C2C;
+}
+
+.film-container,
+.film2-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2rem;
+  color: rgba(46, 46, 47, 1);
+}
+
+.film-container {
+  transition: opacity 2s 2s;
+}
+
+.film {
+  font-size: 10rem;
+}
+
+.hide{
+  opacity: 0;
+}
+
+/* ===============
+WatchList Page
+================== */
+.watch{
+  color: #787878;
+  font-size: 1.5rem;
+  padding: 0 0.75rem;
+}
+
+.explore {
+  font-size: 2rem;
+  color: #787878;
+  width:max-content;
+  margin:auto;
+}
+
+.explore p {
+  margin-left: 0.5rem;
+}
+
+@media (min-width: 300px) {
+  .watch{
+    color: #787878;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .explore{
+    font-size: 1rem;
+    text-align: left;
+    
+    }
+
+  header {
+    padding: 0 0.75rem;
+    font-size: 1.2rem;
+  }
+
+  .film-cont-2{
+    line-height: 1.6;
+  }
+
+  header h1{
+    font-size: 1.2rem;
+    color: #fff;
+  }
+
+  header p{
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    font-size: 1rem;
+  }
+
+  .film-cont-2 img{
+    width:80%;
+    height:100px;
+    object-fit: contain;
+  }
+
+  .film-cont-2 p{
+    font-size: 1rem;
+  }
+}
+
+header a:hover{
+  color: #A5A5A5;
+  text-decoration: underline;
+}
+
+.search-container{
+  position:relative;
+  width:70%;
+  margin: 0 auto;
+  transform: translateY(-20px);
+}
+
+.input{
+  padding: 0.75rem 3rem;
+  border: none;
+  outline: none;
+  background: rgba(46, 46, 47, 1);
+  margin-bottom: 0.75rem;
+  color: #A5A5A5;
+  border-radius: 3px;
+}
+
+.primary-btn {
+  padding:0.8rem 1.5rem;
+  margin-left:-1rem;
+  border:0;
+  background: rgba(75, 75, 75, 1);
+  color: rgba(255, 255, 255, 1);
+  border-radius: 3px;
+  transform:translateX(100px);
+  margin: auto; 
+}
+
+.added{
+  font-size: 1rem;
+  color: red;
+  margin: 0.75rem 0;
+  display: none;
+}
+
+.movie-container,
+.movie2-container{
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.film-container-2{
+  height: auto;
+}
+
+.secondary-btn,
+.btn-3{
+  border-radius: 50%;
+}
+
+.icon{
+  color: #9ca3af;
+  position:absolute;
+  left :5px;
+  top:10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.film-cont-2{
+  width:90%;
+  max-width: 1000px;
+  color: white;
+  margin:1rem auto;
+  text-align: left;
+  line-height: 1.6;
+  padding: 0 0.75rem;
+}
+
+.film-cont-2 img{
+  width:100%;
+  height:370px;
+  object-fit: cover;
+}
+
+.film-cont-2 h2{
+  font-size: 1.5rem;
+}
+
+.film-cont-2 .rate{
+  color:#fff;
+  font-size:1rem;
+  margin-left:0.75rem;
+}
+
+.film-cont-2 .rate::before{
+  content:" \2605";
+  color :gold;
+  margin-right: 0.5rem;
+}
+
+.run-time{
+  display: block;
+}
+
+.btn-cont{
+  display: block;
+  margin: 0.75rem 0;
+}
+
+.btn-cont::after{
+  content:" Watchlist"
+}
+
+.film-cont-2 .genre{
+  margin-right:0.75rem;
+}
+
+.film-cont-2 .add-to{
+  font-size: 1rem;
+}
+
+.film-cont-2 .plot{
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media all and (min-width:500px){    
+  header{
+    padding: 0 2rem;
+  }
+
+  header h1{
+    font-size: 3rem;
+  }
+
+  header a{
+    font-size: 2rem;
+  }
+  
+  .input{
+    width:70%;
+    padding:0.75rem 3rem;
+  }
+
+  .primary-btn{
+    padding:0.75rem 2rem;
+    margin-left:-1rem;
+    border:0;
+    background: rgba(75, 75, 75, 1);
+    color: rgba(255, 255, 255, 1);
+    transform:translateX(0);
+  }
+
+  .film-cont-2{
+    width:100%;
+    max-width:1000px;
+    color: white;
+    margin:auto;
+    text-align: left;
+    line-height: 1.6;
+    padding: 0 0.75rem;
+    display: grid;
+    grid-template-columns:300px repeat(2,fit-content); 
+    grid-template-areas:
+    "img img heading "
+    "img  img div"
+    "img img content";
+    grid-column-gap:23px;
+    justify-content: start;
+    padding: 2rem;
+  }
+  /* watchlist page */
+  .watch{
+    font-size: 2rem;
+  }
+
+  .explore{
+    font-size: 2rem;
+  }
+
+  .explore p{
+    margin-left: 0.5rem;
+  }
+
+  .film-cont-2 img{
+    width:100%;
+    height:300px;
+    object-fit: cover;
+    grid-area: img;
+  }
+
+  .film-cont-2 h2{
+    font-size: 1.5rem;
+    grid-area: heading;
+  }
+
+  .film-cont-2 .plot{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    grid-area: content;
+  }
+
+  .film-cont-2 .add-to{
+    font-size: 1rem;
+    grid-area: div;
+  }
+}
+
+@media all and (min-width:700px){
+  .input{
+    width:80%;
+  }
+  
+  .primary-btn{
+    padding:0.75rem 4rem;
+  }
+
+  .film-cont-2{
+    width:100%;
+    max-width: unset;
+    color: white;
+    margin:auto;
+    text-align: left;
+    line-height: 1.6;
+    padding: 0 0.75rem;
+    display: grid;
+    grid-template-columns:200px repeat(2,1fr); 
+    grid-template-areas:
+    "img heading heading "
+    "img  div     div"
+    "img content content";
+    grid-column-gap:50px;
+    justify-content: start;
+    border-bottom: 2px solid #2C2C2C;
+    padding: 2rem;
+  }
+
+  film-cont-2 img{
+    width:100%;
+    height: 230px;
+    min-height: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    grid-area: img;
+  }
+
+  .film-cont-2 h2{
+    font-size: 1.5rem;
+    grid-area: heading;
+  }
+
+  .film-cont-2 .plot{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    grid-area: content;
+  }
+
+  .film-cont-2 .add-to{
+    font-size: 1rem;
+    grid-area: div;
+  }
+
+  .film-cont-2 .rate{
+    color:#fff;
+    font-size:1rem;
+    margin-left:0.75rem;
+  }
+
+  .film-cont-2 .rate::before{
+    content:" \2605";
+    color :gold;
+    margin-right: 0.5rem;
+  }
+
+  .run-time{
+    display: block;
+  }
+}
+
+.display-p{
+  display: block;
+}
+
+.hide-but{
+  display: none;
+}
